@@ -1,6 +1,36 @@
+html{
+    font-size: 10px;
+}
+
 body{
     background: red;
 }
 #demo{
     background: url('./img/login-bg.png') no-repeat;
 }
+.myDiv{
+    text-align: center;
+    width: 100%;
+    height:100%;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* 小于970px的时候的样式，因为最大的时候才970px */
+@media (max-width: 970px) { 
+    html{
+        font-size: 10px;
+    }
+}
+ /* 大于970px的时候的样式，因为最小的时候才970px */
+@media (min-width: 1170px) { 
+    html{
+        font-size: 20px;
+    }
+}
+
+/* @media (min-width: 970px) and (max-width: 1170px) {
+    html{
+        font-size: calc(  (100vw - 970px) / 200);
+    }
+} */

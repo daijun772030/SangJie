@@ -1,0 +1,6 @@
+body{
+    background: blue;
+}
+#demo{
+    background: url('./img/login-bg.png') no-repeat;
+}

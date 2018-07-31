@@ -7,73 +7,129 @@ html {
     font-size: 14px;
 }
 
-body {
-    /* background; */
+.INnav {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#demo {
-    background: url('./img/login-bg.png') no-repeat;
+.logo {
+    width: 209px;
+    height: 100%;
+    margin-left: 360px;
+    margin-right: 401px;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* line-height: 100px; */
+}
+
+.logo img {
+    width: 209px;
+    height: 53px;
+    margin-top: 25px;
+}
+
+.nav-ul {
+    width: 590px;
+    height: 100%;
+    margin-right: 360px;
 }
 
 .mynav {
-    color: black;
-    text-align: center;
-    height: 200px;
-    border: 1px solid red;
+    list-style: none;
+    color: rgba(102, 102, 102, 1);
+    line-height: 0px;
     width: 100%;
-    font-size: 2rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
 }
 
 .banner {
-    width: 100%;
-    height: 160px;
-    margin-top: 40px;
+    height: 660px;
+    /* border: 1px solid red */
 }
 
-.center {
+.banner img {
     width: 100%;
-    height: 900px;
-    border: 1px solid black;
+    height: 100%;
+}
+
+.app {
+    width: 1410px;
+    height: 794px;
+}
+
+.appPhoto {
+    margin-top: 116px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.05);
+    margin-left: 255px;
+    width: 1410px;
+    height: 749px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-item {
+    width: 526px;
+    /* border: 1px solid red; */
+}
+
+.app-item img {
+    width: 100%;
+    height: 419px;
+    background: rgba(178, 178, 178, 1);
+    border-radius: 2px;
+}
+
+.app-item input {
+    margin-top: 75px;
+    height: 52px;
+    width: 100%;
+}
+
+.app-item button {
+    margin-top: 32px;
     text-align: center;
-}
-
-.center-phone {
     width: 100%;
-    height: 200px;
-    border: 1px solid rebeccapurple;
+    height: 52px;
+    background: rgba(44, 217, 174, 1);
+    border-radius: 2px;
 }
 
-.appPhone {
-    width: 300px;
-    height: 200px;
-    border: 1px solid yellowgreen;
-    margin: 0 auto;
-    line-height: 200px;
+.appImg {
+    margin-top: 116px;
+    height: 860px;
 }
 
-.Business {
+
+/* .brandText {
     width: 100%;
-    height: 497px;
-    border: 1px solid red;
-    text-align: center;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.footer {
-    width: 100%;
-    height: 300px;
-    border: 1px solid blue;
-    text-align: center;
-}
+.brandText p {
+    width: 420px;
+    height: 50px;
+    font-size: 45px;
+    font-family: MicrosoftYaHeiLight;
+    color: rgba(102, 102, 102, 1);
+} */
+
+
+/* #demo {
+    background: url('./img/login-bg.png') no-repeat;
+} */
 
 
 /* 小于970px的时候的样式，因为最大的时候才970px */

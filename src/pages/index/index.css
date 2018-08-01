@@ -7,68 +7,82 @@ html {
     font-size: 14px;
 }
 
-.INnav {
-    width: 100%;
+
+/* 导航的导入 star */
+
+.app1 nav {
     height: 100px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    margin-bottom: 0px;
+    background-color: white;
+    border: none;
 }
 
-.logo {
-    width: 209px;
+.navbar-header {
+    margin-left: 80px;
+}
+
+.mynav1 {
     height: 100%;
-    margin-left: 360px;
-    margin-right: 401px;
-    /* border: 1px solid red; */
+    margin-left: 80px;
+}
+
+.mynav2 {
+    height: 100%;
+}
+
+.mynav2 ul {
+    height: 100%;
     text-align: center;
-    /* line-height: 100px; */
 }
 
-.logo img {
-    width: 209px;
-    height: 53px;
-    margin-top: 25px;
+.mynav2 ul {
+    float: right;
+    /* margin-right: 80px; */
 }
 
-.nav-ul {
-    width: 590px;
+.mynav2 ul>li {
     height: 100%;
-    margin-right: 360px;
 }
 
-.mynav {
-    list-style: none;
+.mynav2 ul li a {
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
     color: rgba(102, 102, 102, 1);
-    line-height: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center
 }
+
+
+/* 导航的导入end */
+
+
+/*  */
 
 .banner {
-    height: 660px;
-    /* border: 1px solid red */
+    width: 100%;
+    /* height: auto; */
 }
 
 .banner img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .app {
-    width: 1410px;
-    height: 794px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
 .appPhoto {
     margin-top: 116px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.05);
-    margin-left: 255px;
+    /* margin-left: 255px; */
     width: 1410px;
     height: 749px;
     display: flex;
@@ -84,7 +98,8 @@ html {
 
 .app-item img {
     width: 100%;
-    height: 419px;
+    height: auto;
+    max-width: 100%;
     background: rgba(178, 178, 178, 1);
     border-radius: 2px;
 }
@@ -96,47 +111,109 @@ html {
 }
 
 .app-item button {
+    font-size: 20px;
     margin-top: 32px;
     text-align: center;
     width: 100%;
     height: 52px;
+    border: none;
     background: rgba(44, 217, 174, 1);
     border-radius: 2px;
 }
 
 .appImg {
+    width: 100%;
     margin-top: 116px;
-    height: 860px;
+    height: auto;
 }
 
-
-/* .brandText {
+.appImg img {
     width: 100%;
-    height: 50px;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.ppText {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    font-size: 52px;
+    font-family: MicrosoftYaHeiLight;
+    color: rgba(102, 102, 102, 1);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands {
+    margin-top: 97px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
-.brandText p {
-    width: 420px;
-    height: 50px;
-    font-size: 45px;
-    font-family: MicrosoftYaHeiLight;
-    color: rgba(102, 102, 102, 1);
-} */
+.brands img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 
+.footer {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 380px;
+    text-align: center;
+    background: rgba(46, 227, 182, 1);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
 
-/* #demo {
-    background: url('./img/login-bg.png') no-repeat;
-} */
+.pStyle {
+    font-size: 38px;
+    margin-bottom: 52px;
+}
+
+.footer ul li {
+    list-style: none;
+    float: left;
+    padding-right: 82px;
+}
+
+.footer li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer div {
+    margin-top: 99px;
+}
 
 
 /* 小于970px的时候的样式，因为最大的时候才970px */
 
 @media (max-width: 970px) {
+    .footer ul li {
+        padding-right: 20px;
+    }
     html {
         font-size: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .footer ul li {
+        padding-left: 0;
+        font-size: 10px;
+    }
+    .footer div p {
+        font-size: 10px;
     }
 }
 

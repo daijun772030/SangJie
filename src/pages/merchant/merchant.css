@@ -58,8 +58,8 @@
 }
 
 .ys {
-    width: 100%;
-    margin: 135px auto;
+    /* width: 100%; */
+    margin: 135px 0;
 }
 
 .ys img {
@@ -121,11 +121,17 @@
 
 @media (max-width:450px) {
     .footer ul li {
-        padding-left: 0;
+        padding-right: 10px;
         font-size: 10px;
+    }
+    .pStyle {
+        font-size: 20px;
     }
     .footer div p {
         font-size: 10px;
+    }
+    .footer div {
+        margin-top: 80px;
     }
 }
 

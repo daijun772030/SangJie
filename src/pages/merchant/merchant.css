@@ -133,13 +133,13 @@
     .footer div {
         margin-top: 80px;
     }
-}
-
-@media (max-width:450px) {
     .about-text p {
         font-size: 10px;
         line-height: 100%;
         overflow-x: auto;
         overflow-y: auto;
+    }
+    .ys {
+        margin: 40px 0;
     }
 }

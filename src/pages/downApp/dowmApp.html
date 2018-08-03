@@ -3,36 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0， user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home页面</title>
+    <meta name="description" content="尚洁科技，让干净生活更智能">
+    <meta name="keywords" content="尚洁, 科技, 打扫, app, 上门服务">
+    <meta name="author" content="编辑者：代俊">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>下载APP</title>
 </head>
 
 <body>
-    <div>home页面</div>
-</body>
+    <div class="container-fluid app">
+        <nav class="navbar navbar-default mynav">
+            <div class="container">
+                <div class="navbar-header mynav1">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#mycollapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="sr-only">切换导航</span>
+                                </button>
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse mynav2" id="mycollapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/index.html">首页</a></li>
+                        <li><a href="/business.html">商务合作</a></li>
+                        <li><a href="/merchant.html">商家入驻</a></li>
+                        <li><a href="/about.html">关于我们</a></li>
+                        <li><a href="/dowmApp.html">下载app</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row content">
+            <div class="col-md-4 col-xs-4 col-md-offset-2 col-xs-offset-2 dowmAppLb">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-</html>
-<!doctype html>
-<html lang="en">
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner" id="lbImg">
+                        <div class="item myitem active">
+                            <img src="./img/lbo.png" alt="First slide">
+                        </div>
+                        <div class="item myitem">
+                            <img src="./img/lbo.png" alt="First slide">
+                        </div>
+                        <div class="item myitem">
+                            <img src="./img/lbo.png" alt="First slide">
+                        </div>
+                        <!-- <div class="item myitem">
+                            <img src="./img/lbo.png" alt="Second slide">
+                        </div>
+                        <div class="item myitem">
+                            <img src="./img/lbo.png" alt="Third slide">
+                        </div> -->
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-4 dowmAppImg">
+                <div class="dowmAppImg-img">
+                    <img src="./img/xiazaiapperweima.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-xs-12 footer">
+                <p class="pStyle">尚洁科技 共创简单生活</p>
+                <ul>
+                    <li>
+                        <a href="../index/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="/business.html">商务合作</a>
+                    </li>
+                    <li>
+                        <a href="/merchant.html">商家入驻</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="/dowmApp.html">下载app</a>
+                    </li>
+                </ul>
+                <div>
+                    <p>©2016 京东到家 沪ICP备16027790号-1</p>
+                    <p>四川尚洁网络科技有限公司联系地址：四川省成都市高新区美年广场D座496室</p>
+                </div>
 
-<head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            </div>
+        </div>
+    </div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-</head>
 
-<body>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

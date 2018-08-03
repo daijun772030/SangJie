@@ -220,6 +220,9 @@ html {
     .appPhoto {
         margin-top: 20px;
     }
+    .appImg {
+        margin-top: 40px;
+    }
     .footer div {
         margin-top: 80px;
     }
@@ -258,21 +261,23 @@ html {
     }
 }
 
-@media only screen and (max-width: 50em) {
+
+/* @media only screen and (max-width: 50em) {
     body {
         font-size: 1.2rem;
         background: #fff;
     }
-}
+} */
 
-@media only screen and (min-width: 30.0625em) and (max-width:50em) {}
+
+/* @media only screen and (min-width: 30.0625em) and (max-width:50em) {}
 
 @media only screen and (max-width: 30em) {
     body {
         font-size: 1.0rem;
         background: #999;
     }
-}
+} */
 
 
 /* @media (min-width: 970px) and (max-width: 1170px) {

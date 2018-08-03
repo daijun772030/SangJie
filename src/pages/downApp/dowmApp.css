@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 导航的导入 star */
+
+.app nav {
+    height: 100px;
+    margin-bottom: 0px;
+    background-color: white;
+    border: none;
+}
+
+.navbar-header {
+    margin-left: 80px;
+}
+
+.mynav1 {
+    height: 100%;
+    margin-left: 80px;
+}
+
+.mynav2 {
+    height: 100%;
+}
+
+.mynav2 ul {
+    height: 100%;
+    text-align: center;
+}
+
+.mynav2 ul {
+    float: right;
+    /* margin-right: 80px; */
+}
+
+.mynav2 ul>li {
+    height: 100%;
+}
+
+.mynav2 ul li a {
+    height: 100%;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    color: rgba(102, 102, 102, 1);
+}
+
+
+/* 导航的导入end */
+
+.content {
+    padding: 100px 0;
+}
+
+.dowmAppLb {
+    /* background-color: red; */
+    /* height: 400px; */
+}
+
+.dowmAppLb>.carousel {
+    width: 100%;
+    /* height: 400px; */
+    background-color: white;
+}
+
+#lbImg {
+    width: 100%;
+    height: 100%;
+}
+
+#blImg>.myitem {
+    width: 100%;
+    height: 100%;
+}
+
+.myitem>img {
+    width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+#lbImg>.myitem {
+    background-image: url(./img/lbo.png);
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: contain;
+}
+
+.dowmAppImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dowmAppImg-img {
+    margin-top: 20%;
+    width: 80%;
+    height: 40%;
+}
+
+.dowmAppImg-img img {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+}
+
+
+/* footer样式 */
+
+.footer {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 380px;
+    text-align: center;
+    background: rgba(46, 227, 182, 1);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.pStyle {
+    font-size: 38px;
+    margin-bottom: 52px;
+}
+
+.footer ul li {
+    list-style: none;
+    float: left;
+    padding-right: 82px;
+}
+
+.footer li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer div {
+    margin-top: 99px;
+}
+
+
+/* 媒体查询器 */
+
+@media (max-width:450px) {
+    .footer ul li {
+        padding-right: 10px;
+        font-size: 10px;
+    }
+    .footer div {
+        margin-top: 80px;
+    }
+    .footer div p {
+        font-size: 10px;
+    }
+    .footer ul li {
+        padding-left: 0;
+    }
+}
+
+@media (max-width:400px) {
+    .pStyle {
+        font-size: 20px;
+    }
+}

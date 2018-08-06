@@ -51,7 +51,7 @@ const instance = create();
 //         }
 //     }
 // };
-const post = (data) => {
+const post = (url) => {
     return (data) => {
         return (config) => {
             return instance.post(url, data, config);
@@ -60,7 +60,7 @@ const post = (data) => {
 }
 const apis = {
     //官网注册电话号码领优惠
-    network: post('/merchant/network')
+    network: post('/archives/network')
 }
 const request = function(name, data, config) {
     return apis[name](data)(config)

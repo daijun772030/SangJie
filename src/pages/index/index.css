@@ -7,9 +7,6 @@ html {
     font-size: 14px;
 }
 
-
-/* 导航的导入 star */
-
 .app1 nav {
     height: 100px;
     margin-bottom: 0px;
@@ -21,12 +18,16 @@ html {
     margin-left: 80px;
 }
 
-.mynav1 {
+.navContent {
     height: 100%;
-    margin-left: 80px;
+    /* background-color: red; */
 }
 
-.mynav2 {
+.navContent>.mynav1 {
+    height: 100%;
+}
+
+.navContent>.mynav1 a {
     height: 100%;
 }
 
@@ -52,8 +53,19 @@ html {
     color: rgba(102, 102, 102, 1);
 }
 
+.navContent>.mynav2>ul>li:active {
+    background: rgba(102, 102, 102, 0.1);
+    /* opacity: 0.02; */
+    border-radius: 8px;
+    color: rgba(51, 51, 51, 1);
+}
 
-/* 导航的导入end */
+.navContent>.mynav2>ul>li:visited {
+    background: rgba(102, 102, 102, 0.1);
+    /* opacity: 0.02; */
+    border-radius: 8px;
+    color: rgba(51, 51, 51, 1);
+}
 
 
 /*  */
@@ -69,6 +81,31 @@ html {
     max-width: 100%;
     background-position: center;
     background-size: cover;
+}
+
+.cooperative p {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 52px;
+    font-family: MicrosoftYaHeiLight;
+    color: rgba(102, 102, 102, 1);
+}
+
+.business-all>div {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-all>div>img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+    /* max-height: 100%; */
 }
 
 .app {
@@ -106,6 +143,18 @@ html {
     max-width: 100%;
     background: rgba(178, 178, 178, 1);
     border-radius: 2px;
+}
+
+#appWexin {
+    display: none;
+    /* width: 80%; */
+}
+
+#appWexin img {
+    /* width: 80%; */
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .app-item input {
@@ -232,6 +281,24 @@ html {
     .footer ul li {
         padding-left: 0;
     }
+    .navContent>.mynav1>button {
+        height: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .navContent>.mynav1>a {
+        height: 100%;
+        /* background-color: red */
+    }
+    .navContent>.mynav1>a>img {
+        height: 100%;
+    }
+    .cooperative p {
+        font-size: 12px;
+    }
+    .business-all>div {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width:400px) {
@@ -249,6 +316,9 @@ html {
     }
     .pStyle {
         font-size: 20px;
+    }
+    .app1 nav {
+        height: 50px;
     }
 }
 

@@ -3,7 +3,20 @@ const webpack = require( 'webpack' );
 const opn =require( 'opn' );//node-open的增强版
 const history =  require('connect-history-api-fallback');
 const config = require( './webpack.dev.conf.js' );
-
+var proxy = require('http-proxy-middleware');
+var options = {
+    target: 'http://39.108.113.149:8082/', // target host
+    changeOrigin: true,               // needed for virtual hosted sites
+    pathRewrite: {
+        '^/api' : '',
+    },
+    router: {
+        // when request.headers.host == 'dev.localhost:3000',
+        // override target 'http://www.example.org' to 'http://localhost:8000'
+        'localhost:3000' : 'http://localhost:3000'
+    }
+};
+var exampleProxy = proxy(options);
 const app = express();
 const compiler = webpack( config );
 // console.log(config)
@@ -47,6 +60,7 @@ webpackDevMiddleware.waitUntilValid( ()=>{
     } );
 } );
 app.use( history() );
+app.use('/api/**', exampleProxy);
 app.listen( port, ()=>{
     console.log( 'express server running' );
 } );

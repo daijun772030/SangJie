@@ -5,7 +5,7 @@
   "author": "daipeng <daipeng@doctorwork.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
+    "dev": "webpack-dev-server --inline --compress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js"
   },

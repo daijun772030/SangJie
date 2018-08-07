@@ -27,26 +27,41 @@
 }
 
 .navContent>.mynav1 a {
+    display: inline-block;
     height: 100%;
 }
 
-.mynav2 ul {
+.navContent>.mynav1>a>img {
+    padding-top: 5px;
+}
+
+.navContent>.mynav2>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mynav2>ul {
     height: 100%;
     text-align: center;
-}
-
-.mynav2 ul {
     float: right;
-    /* margin-right: 80px; */
 }
 
 .mynav2 ul>li {
     height: 100%;
 }
 
-.mynav2 ul li a {
+.navContent>.mynav1>button {
+    border-color: white;
+}
+
+.mynav2 ul>li {
+    z-index: 999;
+}
+
+.mynav2>ul>li>a {
     height: 100%;
-    line-height: 50px;
+    line-height: 60px;
     font-size: 20px;
     font-family: MicrosoftYaHei;
     color: rgba(102, 102, 102, 1);

@@ -41,7 +41,8 @@ html {
 
 .navContent>.mynav2>ul {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
 }
 
@@ -53,6 +54,7 @@ html {
 
 .mynav2 ul>li {
     height: 100%;
+    padding: 0 20px;
 }
 
 .navContent>.mynav1>button {
@@ -119,7 +121,7 @@ input#test {
 .business-all {
     margin: 0 auto;
     width: 60%;
-    padding: 30px 0;
+    padding-bottom: 60px;
 }
 
 .business-all>div {
@@ -283,7 +285,7 @@ input#test {
 
 @media (max-width: 970px) {
     .footer ul li {
-        padding-right: 20px;
+        /* padding-right: 20px; */
     }
     html {
         font-size: 20px;
@@ -325,8 +327,27 @@ input#test {
     .navContent>.mynav1>button {
         border-color: white;
     }
+    .mynav2>ul {
+        margin: 0 auto;
+        height: 80px;
+        background-color: rgba(255, 253, 253, 0.829);
+        width: 100%;
+        overflow: auto;
+    }
     .mynav2 ul>li {
-        z-index: 999;
+        height: 100%;
+        text-align: center;
+        z-index: 9999;
+        width: 100%;
+        padding: 0;
+        /* background: rgba(0, 0, 0, 1); */
+        border-radius: 8px;
+    }
+    .mynav2>ul>li>a {
+        /* height: 100%; */
+        line-height: 15px;
+        font-size: 15px;
+        font-family: MicrosoftYaHei;
     }
     .cooperative p {
         font-size: 12px;

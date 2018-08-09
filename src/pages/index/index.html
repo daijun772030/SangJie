@@ -33,7 +33,7 @@
                     </a>
                 </div>
                 <div class="mynav2 collapse navbar-collapse" id="mycollapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" id="myul">
                         <li><a href="/index.html">首页</a></li>
                         <li><a href="/business.html">商务合作</a></li>
                         <li><a href="/merchant.html">商家入驻</a></li>
@@ -135,6 +135,23 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
     <!-- <script src="http://192.168.0.124:8082/archives/network"></script> -->
+    <script>
+        // debugger
+        var pn = location.pathname;
+        var as = document.getElementById('#myul').getElementsByTagName("a");
+        for (var i = 0, j = as.length; i < j; i++) {
+            // debugger;
+            //判断是否是首页
+            if (pn.length > 3) {
+                //对当前连接的目录位置和a链接的目录位置进行对比
+                if (as[i].href.indexOf(pn) != -1) {
+                    as[i].className = 'active1';
+                    break;
+                }
+                //if (!find) as[0].className = 'focus';//如果未找到匹配的，需要设置哪个获取焦点可以修改这句
+            }
+        }
+    </script>
 </body>
 
 </html>

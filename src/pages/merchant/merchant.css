@@ -99,9 +99,7 @@
 
 .hotline p {
     position: relative;
-    width: 100%;
     height: 50px;
-    /* overflow: hidden; */
 }
 
 .hotline>p>img {
@@ -109,6 +107,7 @@
     top: -50px;
     max-width: 100%;
     height: auto;
+    max-height: 100%；
 }
 
 .ys {
@@ -232,7 +231,7 @@
         font-family: MicrosoftYaHei;
     }
     .hotline {
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
     .hotline>p>img {
         height: 100%;

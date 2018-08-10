@@ -23,17 +23,17 @@
             <div class="container navContent">
                 <div class="navbar-header mynav1">
                     <button class="navbar-toggle" data-toggle="collapse" data-target="#mycollapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="sr-only">切换导航</span>
-                    </button>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="sr-only">切换导航</span>
+                                    </button>
                     <a class="navbar-brand" href="/index.html">
                         <img src="./img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="mynav2 collapse navbar-collapse" id="mycollapse">
-                    <ul class="nav navbar-nav" id="myul">
+                <div class="collapse navbar-collapse mynav2" id="mycollapse">
+                    <ul class="nav navbar-nav">
                         <li><a href="/index.html">首页</a></li>
                         <li><a href="/business.html">商务合作</a></li>
                         <li><a href="/merchant.html">商家入驻</a></li>
@@ -44,8 +44,18 @@
             </div>
         </nav>
         <div class="row">
-            <div class=" banner">
-                <img src="./img/banner1_shouye.png" alt="">
+            <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./img/banner1_shouye.png" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/banner3.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="./img/banner4.jpg" alt="Third slide">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row app">
@@ -136,7 +146,10 @@
     <script src="./index.js"></script>
     <!-- <script src="http://192.168.0.124:8082/archives/network"></script> -->
     <script>
-        // debugger
+        $('#myCarousel').carousel({
+                interval: 2000
+            })
+            // debugger
         var pn = location.pathname;
         var as = document.getElementById('#myul').getElementsByTagName("a");
         for (var i = 0, j = as.length; i < j; i++) {
